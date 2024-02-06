@@ -51,6 +51,7 @@ class ChatReadRetrieveReadApproach(ChatApproach):
         self.chatgpt_token_limit = get_token_limit(chatgpt_model)
 
     @property
+    # 시스템 메시지
     def system_message_chat_conversation(self):
         return """Assistant helps the company employees with their healthcare plan questions, and questions about the employee handbook. Be brief in your answers.
         Answer ONLY with the facts listed in the list of sources below. If there isn't enough information below, say you don't know. Do not generate answers that don't use the sources below. If asking a clarifying question to the user would help, ask the question.

@@ -101,6 +101,8 @@ info4.pdf: In-network institutions include Overlake, Swedish and others in the r
 
         template = overrides.get("prompt_template") or self.system_chat_template
         model = self.chatgpt_model
+
+        # 메시지 생성기
         message_builder = MessageBuilder(template, model)
 
         # Process results

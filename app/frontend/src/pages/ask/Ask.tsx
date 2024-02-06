@@ -177,8 +177,9 @@ export function Component(): JSX.Element {
     return (
         <div className={styles.askContainer}>
             <div className={styles.askTopSection}>
+                {/* 챗봇 질문 프론트 화면*/}
                 <SettingsButton className={styles.settingsButton} onClick={() => setIsConfigPanelOpen(!isConfigPanelOpen)} />
-                <h1 className={styles.askTitle}>Ask your data</h1>
+                <h1 className={styles.askTitle}>Ask your Korean data</h1>
                 <div className={styles.askQuestionInput}>
                     <QuestionInput
                         placeholder="Example: Does my plan cover annual eye exams?"

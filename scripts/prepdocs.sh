@@ -66,7 +66,8 @@ if [ -n "$AZURE_TENANT_ID" ]; then
   tenantArg="--tenantid $AZURE_TENANT_ID"
 fi
 
-./scripts/.venv/bin/python ./scripts/prepdocs.py './data/*' --verbose \
+# remove all 추가: 데이터 제거
+./scripts/.venv/bin/python ./scripts/prepdocs.py './data/*' --removeall --verbose \
 --storageaccount "$AZURE_STORAGE_ACCOUNT" --container "$AZURE_STORAGE_CONTAINER"  \
 --searchservice "$AZURE_SEARCH_SERVICE" --index "$AZURE_SEARCH_INDEX" \
 $searchAnalyzerNameArg $searchSecretNameArg \

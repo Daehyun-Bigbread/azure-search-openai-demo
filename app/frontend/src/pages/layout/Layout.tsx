@@ -13,8 +13,9 @@ const Layout = () => {
         <div className={styles.layout}>
             <header className={styles.header} role={"banner"}>
                 <div className={styles.headerContainer}>
+                    {/* 챗봇 프론트 헤더바  */}
                     <Link to="/" className={styles.headerTitleContainer}>
-                        <h3 className={styles.headerTitle}>GPT + Enterprise data | Sample</h3>
+                        <h3 className={styles.headerTitle}>GPT + Enterprise data | Korean</h3>
                     </Link>
                     <nav>
                         <ul className={styles.headerNavList}>
